@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                     color: Color(0xff203142)),
               )),
               const SizedBox(
-                height: 14,
+                height: 10,
               ),
               const Center(
                   child: Text(
@@ -77,40 +77,61 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              TextFormField(
-                decoration: InputDecoration(
-                    fillColor: Color(0xffF8F9FA),
-                    filled: true,
-                    hintText: 'Email',
-                    prefixIcon: const Icon(
-                      Icons.alternate_email,
-                      color: Color(0xff323F4B),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Color(0xffE4E7EB)),
-                        borderRadius: BorderRadius.circular(10)),
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xffE4E7EB)),
-                        borderRadius: BorderRadius.circular(10))),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                      fillColor: Color(0xffF8F9FA),
+                      filled: true,
+                      hintText: 'Email',
+                      prefixIcon: const Icon(
+                        Icons.alternate_email,
+                        color: Color(0xff323F4B),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(10)),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(10))),
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              TextFormField(
-                decoration: InputDecoration(
-                    fillColor: Color(0xffF8F9FA),
-                    filled: true,
-                    hintText: 'Password',
-                    prefixIcon: const Icon(
-                      Icons.lock_open,
-                      color: Color(0xff323F4B),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Color(0xffE4E7EB)),
-                        borderRadius: BorderRadius.circular(10)),
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xffE4E7EB)),
-                        borderRadius: BorderRadius.circular(10))),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                      fillColor: Color(0xffF8F9FA),
+                      filled: true,
+                      hintText: 'Password',
+                      prefixIcon: const Icon(
+                        Icons.lock_open,
+                        color: Color(0xff323F4B),
+                      ),
+                      suffixIcon: const Icon(Icons.visibility_off_outlined),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(10)),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(10))),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 220, top: 10),
+                child: const Text(
+                  textAlign: TextAlign.end,
+                  'Forgot Password?',
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Rubik-Regular',
+                      color: Color(0xff4C5980),
+                      decoration: TextDecoration.underline, decorationColor: Color(0xff4C5980)),
+                ),
               ),
               const SizedBox(
                 height: 100,
